@@ -1,0 +1,20 @@
+domain: gientech.com
+layout:
+- go.kubebuilder.io/v3
+projectName: kubebuilder-example
+repo: github.com/1284551258/kubebuilder-example
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: gientech.com
+  group: ingress
+  kind: App
+  path: github.com/1284551258/kubebuilder-example/api/v1beta1
+  version: v1beta1
+  webhooks:
+    defaulting: true
+    validation: true
+    webhookVersion: v1
+version: "3"

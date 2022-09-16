@@ -1,0 +1,11 @@
+apiVersion: ingress.gientech.com/v1beta1
+kind: App
+metadata:
+  name: app-sample
+  namespace: default
+spec:
+  # TODO(user): Add fields here
+  enable_ingress: true
+  enable_service: true
+  image: nginx:1.20.0
+  replicas: 1
